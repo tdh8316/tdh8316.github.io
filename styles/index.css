@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 .brand-name {
     font-size: 1.5rem;
     margin-left: 15px;
