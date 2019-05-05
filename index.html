@@ -18,12 +18,9 @@
                 <div data-column="1" class="cell" id="iqst">
                     <a href="#" id="im9v"><span class="brand-name">Donghyeok Tak</span></a>
                     <div id="i1wjn" class="burger">
-                        <div class="burger-line-dark">
-                        </div>
-                        <div class="burger-line-dark">
-                        </div>
-                        <div class="burger-line-dark">
-                        </div>
+                        <div class="burger-line-dark"></div>
+                        <div class="burger-line-dark"></div>
+                        <div class="burger-line-dark"></div>
                     </div>
                 </div>
                 <div data-column="1" class="cell" id="irmm7">
@@ -66,4 +63,57 @@
             </div>
         </div>
     </section>
+    <script>
+        var items = document.querySelectorAll('#i1wjn');
+        for (var i = 0, len = items.length; i < len; i++) {
+            (function () {
+                    var t, e = 0,
+                        n = function () {
+                            var t, e = document.createElement("void"),
+                                n = {
+                                    transition: "transitionend",
+                                    OTransition: "oTransitionEnd",
+                                    MozTransition: "transitionend",
+                                    WebkitTransition: "webkitTransitionEnd"
+                                };
+                            for (t in n)
+                                if (void 0 !== e.style[t]) return n[t]
+                        }
+                        (),
+                        r = function (t) {
+                            e = 1;
+                            var n = function (t) {
+                                    var e = window.getComputedStyle(t),
+                                        n = e.display,
+                                        r = (e.position, e.visibility, e.height, parseInt(e["max-height"]));
+                                    if ("none" !== n && "0" !== r) return t.offsetHeight;
+                                    t.style.height = "auto", t.style.display = "block", t.style.position = "absolute", t
+                                        .style.visibility = "hidden";
+                                    var o = t.offsetHeight;
+                                    return t.style.height = "", t.style.display = "", t.style.position = "", t.style
+                                        .visibility = "", o
+                                }
+                                (t),
+                                r = t.style;
+                            r.display = "block", r.transition = "max-height 0.25s ease-in-out", r.overflowY = "hidden",
+                                "" == r["max-height"] && (r["max-height"] = 0), 0 == parseInt(r["max-height"]) ? (r[
+                                    "max-height"] = "0", setTimeout(function () {
+                                    r["max-height"] = n + "px"
+                                }, 10)) : r["max-height"] = "0"
+                        };
+                    "gjs-collapse" in this || this.addEventListener("click", function (o) {
+                        if (o.preventDefault(), !e) {
+                            var i = this.closest("[data-gjs=navbar]").querySelector("[data-gjs=navbar-items]");
+                            r(i), t || (i.addEventListener(n, function () {
+                                e = 0;
+                                var t = i.style;
+                                0 == parseInt(t["max-height"]) && (t.display = "", t["max-height"] =
+                                    "")
+                            }), t = 1)
+                        }
+                    }), this["gjs-collapse"] = 1
+                }
+                .bind(items[i]))();
+        }
+    </script>
 </body>
