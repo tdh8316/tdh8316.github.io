@@ -201,6 +201,72 @@ body {
     padding: 25px 10px 25px 10px;
 }
 
+.section1 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    padding: 50px 0;
+    color: #444;
+    background-color: #eee;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: #dc659b;
+    margin-bottom: 20px;
+}
+
+.card-main {
+    font-size: 3rem;
+    padding: 0 5px;
+}
+
+.card-item-desc {
+    margin: 10px 0;
+    padding: 0 0 0 0;
+}
+
+.pricing-items {
+    margin: 50px 0;
+    padding: 10px 0;
+}
+
+.card-item {
+    padding: 5px 0;
+    font-weight: 400;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+#i0zmq {
+    padding: 25px 0;
+}
+
+#i2atn {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#in8b1 {
+    text-align: center;
+}
+
+#iwvkh {
+    margin: 0 0 32px 0;
+    font-size: 20px;
+}
+
+#ikqva {
+    margin: 0 0 32px 0;
+    font-size: 20px;
+}
+
+#itnnl {
+    margin: 0 0 32px 0;
+    font-size: 20px;
+}
+
 @media (max-width: 768px) {
     .burger {
         display: block;

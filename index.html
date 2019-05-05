@@ -1,119 +1,196 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Donghyeok Tak</title>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="styles/base.css" type="text/css" />
-    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+  <meta charset="utf-8" />
+  <title>Donghyeok Tak</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="styles/base.css" type="text/css" />
+  <link rel="stylesheet" href="styles/index.css" type="text/css" />
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
 </head>
 
 <body>
-    <header class="header1">
-        <div class="container" id="im5k">
-            <div data-columns="1" data-gjs="navbar" class="row" id="ialp">
-                <div data-column="1" class="cell" id="iqst">
-                    <a href="#" id="im9v"><span class="brand-name">Donghyeok Tak</span></a>
-                    <div id="i1wjn" class="burger">
-                        <div class="burger-line-dark"></div>
-                        <div class="burger-line-dark"></div>
-                        <div class="burger-line-dark"></div>
-                    </div>
-                </div>
-                <div data-column="1" class="cell" id="irmm7">
-                    <div data-gjs="navbar-items" class="menu-container">
-                        <nav data-gjs="navs" class="menu">
-                            <a href="#" class="menu-link">Home</a>
-                            <a href="./about" class="menu-link">About</a>
-                            <a href="./contact" class="menu-link">Contact</a>
-                            <a href="./apps" class="menu-link">Apps<br></a>
-                            <a href="#" class="menu-link">Blog<br></a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+  <header class="header1">
+    <div class="container" id="im5k">
+      <div data-columns="1" data-gjs="navbar" class="row" id="ialp">
+        <div data-column="1" class="cell" id="iqst">
+          <a href="./" id="im9v"><span class="brand-name">Donghyeok Tak</span></a>
+          <div id="i1wjn" class="burger">
+            <div class="burger-line-dark"></div>
+            <div class="burger-line-dark"></div>
+            <div class="burger-line-dark"></div>
+          </div>
         </div>
-    </header>
-    <section id="i0qdu">
-        <div class="container" id="i9x15">
-            <img id="i3zoy" src="https://avatars3.githubusercontent.com/u/20598077?s=460&v=4" />
-            <div data-columns="1" class="row" id="ib4ib">
-                <div data-column="1" class="cell" id="i1aqy">
-                    <h1 id="ie48f">
-                        Donghyeok Tak
-                    </h1>
-                    <div id="ibgrv">
-                        #16 years old #Windows #Android #IOS #For fun
-                    </div>
-                    <div class="gpd-text" id="i2e53">I make what I want as for fun. Mostly python &amp; flutter.
-                    </div>
-                    <div class="row" id="i4e5i">
-                        <div class="cell" id="idc1g">
-                            <img id="iqja4"
-                                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
-                        </div>
-                        <div class="cell" id="is37p">
-                            <a href="https://github.com/tdh8316" target="_blank" class="gpd-button4" id="i40pk">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div data-column="1" class="cell" id="irmm7">
+          <div data-gjs="navbar-items" class="menu-container">
+            <nav data-gjs="navs" class="menu">
+              <a href="./" class="menu-link">Home</a>
+              <a href="./about" class="menu-link">About</a>
+              <a href="./contact" class="menu-link">Contact</a>
+              <a href="./apps" class="menu-link">Apps<br></a>
+              <a href="#" class="menu-link">Blog<br></a>
+            </nav>
+          </div>
         </div>
-    </section>
-    <script>
-        var items = document.querySelectorAll('#i1wjn');
-        for (var i = 0, len = items.length; i < len; i++) {
-            (function () {
-                    var t, e = 0,
-                        n = function () {
-                            var t, e = document.createElement("void"),
-                                n = {
-                                    transition: "transitionend",
-                                    OTransition: "oTransitionEnd",
-                                    MozTransition: "transitionend",
-                                    WebkitTransition: "webkitTransitionEnd"
-                                };
-                            for (t in n)
-                                if (void 0 !== e.style[t]) return n[t]
-                        }
-                        (),
-                        r = function (t) {
-                            e = 1;
-                            var n = function (t) {
-                                    var e = window.getComputedStyle(t),
-                                        n = e.display,
-                                        r = (e.position, e.visibility, e.height, parseInt(e["max-height"]));
-                                    if ("none" !== n && "0" !== r) return t.offsetHeight;
-                                    t.style.height = "auto", t.style.display = "block", t.style.position = "absolute", t
-                                        .style.visibility = "hidden";
-                                    var o = t.offsetHeight;
-                                    return t.style.height = "", t.style.display = "", t.style.position = "", t.style
-                                        .visibility = "", o
-                                }
-                                (t),
-                                r = t.style;
-                            r.display = "block", r.transition = "max-height 0.25s ease-in-out", r.overflowY = "hidden",
-                                "" == r["max-height"] && (r["max-height"] = 0), 0 == parseInt(r["max-height"]) ? (r[
-                                    "max-height"] = "0", setTimeout(function () {
-                                    r["max-height"] = n + "px"
-                                }, 10)) : r["max-height"] = "0"
-                        };
-                    "gjs-collapse" in this || this.addEventListener("click", function (o) {
-                        if (o.preventDefault(), !e) {
-                            var i = this.closest("[data-gjs=navbar]").querySelector("[data-gjs=navbar-items]");
-                            r(i), t || (i.addEventListener(n, function () {
-                                e = 0;
-                                var t = i.style;
-                                0 == parseInt(t["max-height"]) && (t.display = "", t["max-height"] =
-                                    "")
-                            }), t = 1)
-                        }
-                    }), this["gjs-collapse"] = 1
-                }
-                .bind(items[i]))();
-        }
-    </script>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    var items = document.querySelectorAll('#i1wjn');
+    for (var i = 0, len = items.length; i < len; i++) {
+      (function () {
+        var t, e = 0,
+          n = function () {
+            var t, e =
+              document.createElement("void"),
+              n = {
+                transition: "transitionend",
+                OTransition: "oTransitionEnd",
+                MozTransition: "transitionend",
+                WebkitTransition: "webkitTransitionEnd"
+              };
+            for (t in n)
+              if (void 0 !== e.style[t]) return n[t]
+          }(),
+          r = function (t) {
+            e = 1;
+            var n = function (t) {
+                var e = window.getComputedStyle(t),
+                  n = e.display,
+                  r = (e.position, e.visibility, e.height, parseInt(e["max-height"]));
+                if ("none" !== n && "0" !== r)
+                  return t.offsetHeight;
+
+                t.style.height = "auto", t.style.display = "block", t.style.position = "absolute", t
+                  .style.visibility = "hidden";
+                var o = t.offsetHeight;
+                return t.style.height = "", t.style.display = "", t.style.position = "", t.style
+                  .visibility = "", o
+              }(t),
+              r = t.style;
+            r.display = "block", r.transition = "max-height 0.25s ease-in-out", r.overflowY = "hidden",
+              "" == r["max-height"] && (r["max-height"] = 0),
+              0 == parseInt(r["max-height"]) ? (r["max-height"] = "0",
+                setTimeout(function () {
+                  r["max-height"] = n + "px"
+                }, 10)) : r["max-height"] = "0"
+          };
+        "gjs-collapse" in this || this.addEventListener("click", function (o) {
+          if (o.preventDefault(), !e) {
+            var i = this.closest("[data-gjs=navbar]").querySelector("[data-gjs=navbar-items]");
+            r(i), t || (i.addEventListener(n, function () {
+              e = 0;
+              var t = i.style;
+              0 == parseInt(t["max-height"]) && (t.display = "", t["max-height"] =
+                "")
+            }), t = 1)
+          }
+        }), this["gjs-collapse"] = 1
+      }.bind(items[i]))();
+    }
+  </script>
+
+  <section id="i0qdu">
+    <div class="container" id="i9x15">
+      <img id="i3zoy" src="https://avatars3.githubusercontent.com/u/20598077?s=460&v=4" />
+      <div data-columns="1" class="row" id="ib4ib">
+        <div data-column="1" class="cell" id="i1aqy">
+          <h1 id="ie48f">
+            Donghyeok Tak
+          </h1>
+          <div id="ibgrv">
+            #16 years old #Windows #Android #IOS #For fun
+          </div>
+          <div class="gpd-text" id="i2e53">
+            I make something I want, for fun. Mostly python & flutter.<br />
+            I do love what I do.
+          </div>
+          <div class="row" id="i4e5i">
+            <div class="cell" id="idc1g">
+              <img id="iqja4" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
+            </div>
+            <div class="cell" id="is37p">
+              <a href="https://github.com/tdh8316" target="_blank" class="gpd-button4" id="i40pk">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section1">
+    <div class="container" id="i0zmq">
+      <h1 id="i2atn">Something I can do
+      </h1>
+      <div data-columns="1" class="row" id="in8b1">
+        <div data-column="1" class="cell-gut" id="ivxr2">
+          <article class="card">
+            <div class="card-title">Languages
+            </div>
+            <div class="pricing-price">
+              <span class="card-main" id="istb8">Python</span>
+            </div>
+            <div class="card-item-desc">And more...
+            </div>
+            <div class="pricing-items">
+              <h1 id="iwvkh">I can make something with these
+              </h1>
+              <div class="card-item">Kotlin
+              </div>
+              <div class="card-item">Go
+              </div>
+              <div class="card-item">.NET
+              </div>
+            </div>
+          </article>
+        </div>
+        <div data-column="1" class="cell-gut" id="i0rus">
+          <article class="card">
+            <div class="card-title">Frameworks
+            </div>
+            <div class="pricing-price" id="i3p55">
+              <span class="card-main">Flutter</span>
+            </div>
+            <div class="card-item-desc">Android/IOS
+            </div>
+            <div class="pricing-items">
+              <h1 id="ikqva">And the frameworks I've learned
+              </h1>
+              <div class="card-item">React
+              </div>
+              <div class="card-item">AngularJS
+              </div>
+              <div class="card-item">Hard Working...
+              </div>
+            </div>
+          </article>
+        </div>
+        <div data-column="1" class="cell" id="iaxdj">
+          <article class="card" id="i7qij">
+            <div class="card-title">Dev tools
+            </div>
+            <div class="pricing-price">
+              <span class="card-main">Pycharm</span>
+            </div>
+            <div class="card-item-desc">For python
+            </div>
+            <div class="pricing-items">
+              <h1 id="itnnl">Dev tools I frequently use
+              </h1>
+              <div class="card-item">Visual Studio (Code)
+              </div>
+              <div class="card-item">Xcode
+              </div>
+              <div class="card-item">Terminal
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
