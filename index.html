@@ -39,6 +39,302 @@
     </div>
   </header>
 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    .brand-name {
+      font-size: 1.5rem;
+      margin-left: 15px;
+      vertical-align: middle;
+      margin: 0 0 0 0;
+    }
+
+    .header1 {
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 200;
+      min-height: 50px;
+      color: #444;
+      background-color: #fff;
+    }
+
+    .menu-container {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .menu {
+      padding: 3px 0;
+      display: block;
+      margin: 0;
+    }
+
+    .menu-link {
+      margin: 0;
+      color: inherit;
+      opacity: 0.75;
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 10px 15px;
+      transition: opacity 0.25s;
+      border: 0 solid #444444;
+      border-radius: 0 0 0 0;
+    }
+
+    .menu-link:hover {
+      opacity: 1;
+    }
+
+    .burger {
+      margin: 5px 0 0;
+      width: 45px;
+      padding: 5px 10px;
+      display: none;
+      float: right;
+      cursor: pointer;
+    }
+
+    .burger-line-dark {
+      padding: 1px;
+      background-color: #444;
+      margin: 5px 0;
+    }
+
+    #im5k {
+      padding: 0;
+    }
+
+    #ialp {
+      min-height: 10px;
+    }
+
+    #iqst {
+      min-height: 10px;
+    }
+
+    #im9v {
+      display: inline-block;
+      padding: 5px;
+      vertical-align: middle;
+      min-width: 50px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #irmm7 {
+      min-height: 0;
+      text-align: right;
+    }
+
+    #i0qdu {
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 200;
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+    }
+
+    #i9x15 {
+      padding: 25px 0;
+    }
+
+    #ib4ib {
+      white-space: initial;
+    }
+
+    #ie48f {
+      font-size: 2.5rem;
+      margin: 33.2px 0 10px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+    }
+
+    #ibgrv {
+      line-height: 2rem;
+      margin-bottom: 50px;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-size: 20px;
+      margin: 0 0 0 0;
+      font-family: Comic Sans MS, cursive, sans-serif;
+    }
+
+    #i3zoy {
+      color: black;
+      opacity: 1;
+      border-radius: 256px 256px 256px 256px;
+      background-color: #cccccc;
+      max-width: 100%;
+      width: 144px;
+      font-size: 2px;
+      height: 144px;
+    }
+
+    .gpd-button4 {
+      display: inline-block;
+      padding: 15px 30px;
+      text-decoration: none;
+      text-align: center;
+      opacity: 1;
+      transition: color 0.25s, opacity 0.25s;
+      border-radius: 100px;
+      border: 2px solid #dc659b;
+      color: #dc659b;
+    }
+
+    .gpd-button4:hover {
+      opacity: 0.85;
+    }
+
+    .gpd-button4:active {
+      opacity: 0.95;
+    }
+
+    #i40pk {
+      border: 0 solid #000000;
+      color: #000000;
+      padding: 15px 0 15px 0;
+      font-size: 24px;
+      font-family: Courier New, Courier, monospace;
+      font-weight: 700;
+    }
+
+    #iqja4 {
+      color: black;
+      width: 32px;
+      height: 32px;
+    }
+
+    #i4e5i {
+      align-items: center;
+      padding: 0 0 0 0;
+      justify-content: center;
+    }
+
+    #idc1g {
+      flex-basis: 200%;
+      max-width: 50px;
+    }
+
+    #is37p {
+      flex-basis: 100%;
+      max-width: 64px;
+      padding: 5px 0 5px 0;
+    }
+
+    #i2e53 {
+      margin: 25px 0 25px 0;
+      font-family: Courier New, Courier, monospace;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0;
+      padding: 25px 10px 25px 10px;
+    }
+
+    .section1 {
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 200;
+      padding: 50px 0;
+      color: #444;
+      background-color: #eee;
+    }
+
+    .card-title {
+      font-size: 2rem;
+      color: #dc659b;
+      margin-bottom: 20px;
+    }
+
+    .card-main {
+      font-size: 3rem;
+      padding: 0 5px;
+    }
+
+    .card-item-desc {
+      margin: 10px 0;
+      padding: 0 0 0 0;
+    }
+
+    .pricing-items {
+      margin: 50px 0;
+      padding: 10px 0;
+    }
+
+    .card-item {
+      padding: 5px 0;
+      font-weight: 400;
+      font-family: Comic Sans MS, cursive, sans-serif;
+    }
+
+    #i0zmq {
+      padding: 25px 0;
+    }
+
+    #i2atn {
+      font-weight: 200;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    #in8b1 {
+      text-align: center;
+    }
+
+    #iwvkh {
+      margin: 0 0 32px 0;
+      font-size: 20px;
+    }
+
+    #ikqva {
+      margin: 0 0 32px 0;
+      font-size: 20px;
+    }
+
+    #itnnl {
+      margin: 0 0 32px 0;
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .burger {
+        display: block;
+      }
+
+      .menu-container {
+        display: none;
+        width: 100%;
+      }
+
+      .menu {
+        width: 100%;
+      }
+
+      .menu-link {
+        display: block;
+      }
+    }
+  </style>
+
   <script>
     var items = document.querySelectorAll('#i1wjn');
     for (var i = 0, len = items.length; i < len; i++) {
