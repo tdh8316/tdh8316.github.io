@@ -6,12 +6,12 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/:about" component={AboutPage} />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/:about" component={AboutPage} />
 
-      <Route component={() => <Redirect to="/" />} />
-    </Switch>
+        <Route component={() => <Redirect to="/" />} />
+      </Switch>
   );
 }
 
