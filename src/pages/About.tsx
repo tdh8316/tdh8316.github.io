@@ -1,6 +1,6 @@
 import React from 'react';
-import MenuComponent from '../components/MenuItems'
 import '../App.css';
+import MenuComponent from '../components/MenuItems';
 
 const AboutPage = () => {
   return (
