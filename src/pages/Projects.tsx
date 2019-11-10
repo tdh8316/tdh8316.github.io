@@ -1,9 +1,9 @@
 import React from 'react';
-import MenuComponent from '../components/MenuItems'
 import '../App.css';
+import MenuComponent from '../components/MenuItems';
 
 
-const HomePage: React.FC = () => {
+const ProjectsPage: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,14 +14,11 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="wrap-content">
-            <h1 style={{ fontFamily: "Comfortaa" }} className="small">Hello<span className="dot-highlight">.</span></h1>
-            <h2>I am<br />Donghyeok Tak</h2>
-            <h5>
-            I'm passionate about building software that makes our life beautiful.
-            </h5>
+            <h1 style={{ fontFamily: "Comfortaa" }} className="small">Projects</h1>
           </div>
         </section>
       </header>
+
       <footer itemScope itemType="http://schema.org/WPFooter">
         <div className="wrap-social">
           <MenuComponent></MenuComponent>
@@ -31,4 +28,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default ProjectsPage;
