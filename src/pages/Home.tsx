@@ -14,10 +14,19 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="wrap-content">
+            <div className="wrap-description">
+              <div className="cookie-banner">
+                <p className="small-height">
+                  <span style={{ color: "#3F51B5", fontFamily: "Source Code Pro" }}>
+                    #Full-Stack and Application Developer
+                  </span>
+                </p>
+              </div>
+            </div>
             <h1 style={{ fontFamily: "Comfortaa" }} className="small">Hello<span className="dot-highlight">.</span></h1>
             <h2>I am<br />Donghyeok Tak</h2>
-            <h5>
-            I'm passionate about building software that makes our life beautiful.
+            <h5 style={{ fontFamily: "Source Code Pro" }}>
+              I'm passionate about building software that makes our life beautiful.
             </h5>
           </div>
         </section>

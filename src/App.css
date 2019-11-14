@@ -19,16 +19,19 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 10px;
 }
+
 @media screen and (max-width: 991px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
+
 @media screen and (max-width: 600px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
+
 .grid-item {
   padding: 20px;
   font-size: 30px;
@@ -111,6 +114,74 @@ section#intro .wrap-content h1 {
   color: #FF5252 !important;
 }
 
+section#intro .wrap-description {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -128px;
+}
+@media screen and (max-width: 1199px) {
+  section#intro .wrap-description {
+    bottom: -100px;
+    top: inherit;
+    left: 0px;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section#intro .wrap-description {
+    bottom: -100px;
+    top: inherit;
+    left: 0px;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  section#intro .wrap-description {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#intro .wrap-description {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  section#intro .wrap-description {
+    bottom: 0px;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section#intro .wrap-description {
+    bottom: 25px;
+    visibility: visible;
+  }
+}
+
+section#intro .wrap-description p {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 991px) {
+  section#intro .wrap-description p {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 h2,
 h3 {
   font-size: 120px;
@@ -122,16 +193,19 @@ h3 {
 h4 {
   font-size: 64px;
 }
+
 @media screen and (max-width: 1199px) {
   h4 {
     font-size: 48px;
   }
 }
+
 @media screen and (max-width: 991px) {
   h4 {
     font-size: 40px;
   }
 }
+
 @media screen and (max-width: 600px) {
   h4 {
     font-size: 33px;
