@@ -24,6 +24,9 @@
     "react-sticky": "^6.0.3",
     "typescript": "~3.7.2"
   },
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
