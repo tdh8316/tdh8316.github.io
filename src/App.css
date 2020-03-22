@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -14,25 +14,87 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  position: relative;
+  padding-top: 16vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 50vh;
+  max-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header-intro {
+  padding-left: 16vw;
+  padding-right: 32vw;
+}
+
+.App-header-intro-name {
+  margin-top: -32px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 1023px) {
+  .App-header-intro-name {
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 1277px) {
+  .App-header-intro {
+    padding-left: 8vw;
+    padding-right: 4vw;
+  }
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header-arrow {
+  stroke: #000000;
+  fill: none;
+}
+
+.App-header-arrow:hover {
+  stroke: #696969;
+}
+
+.App-header-arrow-div {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 25vh;
+}
+
+@media (max-width: 1443px) {
+  .App-header-arrow-div {
+    padding-top: 1vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .App-header-arrow-div {
+    padding-top: 10vh;
+  }
+}
+
+.App-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+  padding-right: 32px;
+  padding-top: 16px;
 }
